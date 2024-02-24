@@ -5,7 +5,7 @@ export const DARK_COLOR = {
 };
 
 export const LIGHT_COLOR = {
-  "--color-text-primary": "#00000",
-  "--theme-color-background": "fffff",
+  "--color-text-primary": "#212121",
+  "--theme-color-background": "#fafafa",
   "--color-text-secondary": "#73355b",
 };

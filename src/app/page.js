@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import TextAnimation from "../components/Animation/TextAnimation";
+import SocialIcons from "@/components/Social_Icons/SocialIcons";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           leveraging my skills to create user-friendly and visually appealing
           websites. Experienced in working with the Shopify e-commerce platform.
         </p>
+        <SocialIcons />
       </section>
       <section className={styles.profile}>
         <Image
@@ -23,7 +25,7 @@ export default function Home() {
           width={450}
           height={450}
           style={{
-            borderRadius: "50%",
+            borderRadius: "58% 42% 23% 77% / 55% 52% 48% 45% ",
           }}
         />
       </section>

@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { cookies } from "next/headers";
 import "./globals.css";
 import styles from "./page.module.css";
 const inter = Inter({ subsets: ["latin"] });
@@ -12,7 +13,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const theme = "dark";
+  // get the theme-color from user browser cookies
+  const savedTheme = cookies().get("color-theme");
+  // set the theme color to user prefrence or to light mode
+  const theme = savedTheme?.value || "light";
+
   return (
     <html
       lang="en"
@@ -21,7 +26,7 @@ export default function RootLayout({ children }) {
       style={theme === "light" ? LIGHT_COLOR : DARK_COLOR}
     >
       <body className={styles.wrapper}>
-        <Header />
+        <Header initialTheme={theme} />
         <main className={styles.main}>{children}</main>
         <Footer />
       </body>

@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { GitHub, Twitter, Linkedin } from "react-feather";
+import SocialIcons from "../Social_Icons/SocialIcons";
 
 const Footer = () => {
   return (
@@ -28,29 +28,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.social_icon_container}>
-        <Link
-          href="https://github.com/Aymen-Gherdaine"
-          className={styles.social_icon}
-          target="_blank"
-        >
-          <GitHub size="1.5rem" />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/aymen-gherdaine"
-          className={styles.social_icon}
-          target="_blank"
-        >
-          <Linkedin size="1.5rem" />
-        </Link>
-        <Link
-          href="https://github.com/Aymen-Gherdaine"
-          className={styles.social_icon}
-          target="_blank"
-        >
-          <Twitter size="1.5rem" />
-        </Link>
-      </div>
+
+      <SocialIcons />
       <div className={styles.copywrite_container}>
         <p className={styles.copywrite_text}>
           © 2024 Aymen Gherdaine. All rights reserved.

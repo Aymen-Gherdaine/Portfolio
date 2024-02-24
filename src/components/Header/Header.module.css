@@ -15,6 +15,7 @@
 
 .logo_link {
   text-decoration: none;
+  color: var(--color-text-primary);
 }
 
 .container__list {
@@ -50,12 +51,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50%;
   color: var(--color-text-primary);
   cursor: pointer;
   transition: background 1s;
 }
 
-.theme_icon:hover {
-  background: var(--color-text-secondary);
+html[data-color-theme="dark"] .theme_icon:hover {
+  background: var(--color-text-primary);
+  color: var(--theme-color-background);
+}
+
+html[data-color-theme="light"] .theme_icon:hover {
+  background: var(--color-text-primary);
+  color: var(--theme-color-background);
 }

@@ -1,7 +1,42 @@
+"use client";
+import React from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import { Sun, Moon } from "react-feather";
-const Header = () => {
+import Cookie from "js-cookie";
+import { LIGHT_COLOR, DARK_COLOR } from "@/constants";
+
+const Header = ({ initialTheme }) => {
+  // state for handleling theme color
+  const [theme, setTheme] = React.useState(initialTheme);
+
+  // function for toggling the theme color
+  function handleToggleTheme() {
+    // setting a variable that take the oposite theme color
+    const newTheme = theme === "light" ? "dark" : "light";
+
+    // set the theme state to the newTheme color
+    setTheme(newTheme);
+
+    // set the newTheme color in browser cookie setting
+    Cookie.set("color-theme", newTheme, {
+      expires: 1000,
+    });
+
+    // setting theme colors object depanding on the current theme
+    const newThemeColor = newTheme === "light" ? LIGHT_COLOR : DARK_COLOR;
+
+    // set root variable that pointe to the documentElement
+    const root = document.documentElement;
+
+    // set the "data-color-theme" attribute in html root elem to the newTheme color
+    root.setAttribute("data-color-theme", newTheme);
+
+    // set each newThemeColor key&value to the document style property
+    Object.entries(newThemeColor).forEach(([key, value]) => {
+      root.style.setProperty(key, value);
+    });
+  }
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo_link}>
@@ -31,8 +66,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <button className={styles.theme_icon}>
-        <Sun size="1.5rem" />
+      <button className={styles.theme_icon} onClick={handleToggleTheme}>
+        {theme === "light" ? <Sun size="1.5rem" /> : <Moon Sun size="1.5rem" />}
       </button>
     </header>
   );

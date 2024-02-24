@@ -1,9 +1,12 @@
 .footer {
-  width: 50%;
+  width: 55%;
   padding: 10px;
   margin: 0 auto;
   border-top: 1px solid var(--color-text-secondary);
   background: var(--theme-color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link_wrapper {
@@ -27,34 +30,6 @@
 }
 
 .link:hover {
-  opacity: 0.7;
-  color: var(--color-text-primary);
-}
-
-.social_icon_container {
-  width: 20%;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.social_icon {
-  display: block;
-  border: none;
-  background: transparent;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1000px;
-  color: var(--color-text-secondary);
-  cursor: pointer;
-  transition: opacity 200ms;
-}
-
-.social_icon:hover {
   opacity: 0.7;
   color: var(--color-text-primary);
 }
