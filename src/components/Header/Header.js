@@ -5,6 +5,7 @@ import styles from "./Header.module.css";
 import { Sun, Moon } from "react-feather";
 import Cookie from "js-cookie";
 import { LIGHT_COLOR, DARK_COLOR } from "@/constants";
+import RevealAnimation from "../Animation/RevealAnimation";
 
 const Header = ({ initialTheme }) => {
   // state for handleling theme color
@@ -39,36 +40,50 @@ const Header = ({ initialTheme }) => {
   }
   return (
     <header className={styles.header}>
-      <Link href="/" className={styles.logo_link}>
-        <h1 className={styles.logo}>AG</h1>
-      </Link>
+      <RevealAnimation>
+        <Link href="/" className={styles.logo_link}>
+          <h1 className={styles.logo}>AG</h1>
+        </Link>
+      </RevealAnimation>
 
       <div className={styles.link_wrapper}>
-        <ul className={styles.container__list}>
-          <li>
-            <Link href="/blogs" className={styles.link}>
-              Blog
-            </Link>
-          </li>
-        </ul>
-        <ul className={styles.container__list}>
-          <li>
-            <Link href="/projects" className={styles.link}>
-              Projects
-            </Link>
-          </li>
-        </ul>
-        <ul className={styles.container__list}>
-          <li>
-            <Link href="/contact" className={styles.link}>
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <RevealAnimation delay="0.3">
+          <ul className={styles.container__list}>
+            <li>
+              <Link href="/blogs" className={styles.link}>
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </RevealAnimation>
+        <RevealAnimation delay="0.4">
+          <ul className={styles.container__list}>
+            <li>
+              <Link href="/projects" className={styles.link}>
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </RevealAnimation>
+        <RevealAnimation delay="0.5">
+          <ul className={styles.container__list}>
+            <li>
+              <Link href="/contact" className={styles.link}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </RevealAnimation>
       </div>
-      <button className={styles.theme_icon} onClick={handleToggleTheme}>
-        {theme === "light" ? <Sun size="1.5rem" /> : <Moon Sun size="1.5rem" />}
-      </button>
+      <RevealAnimation delay="0.5">
+        <button className={styles.theme_icon} onClick={handleToggleTheme}>
+          {theme === "light" ? (
+            <Sun size="1.5rem" />
+          ) : (
+            <Moon Sun size="1.5rem" />
+          )}
+        </button>
+      </RevealAnimation>
     </header>
   );
 };
