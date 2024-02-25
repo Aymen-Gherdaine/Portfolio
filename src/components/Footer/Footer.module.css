@@ -58,5 +58,6 @@
   .copywrite_container {
     width: 100%;
     margin: 20px auto;
+    text-align: center;
   }
 }

@@ -1,7 +1,6 @@
 .wrapper {
   background: var(--theme-color-background);
   color: var(--color-text-primary);
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -9,14 +8,19 @@
   min-height: 100vh;
 }
 
+.home_page_hero {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  gap: 10px;
+}
+
 .main {
   width: 80%;
   margin: 0 auto;
+  padding: 50px 0;
   flex: 1;
-  padding: 50px;
-  display: flex;
-  gap: 10px;
-  flex-basis: 50%;
 }
 
 .about {
@@ -81,7 +85,7 @@
   }
 
   .about_me_paragraph {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .resume_btn {
