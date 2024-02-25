@@ -9,7 +9,9 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.about}>
         <RevealAnimation>
-          <h1 className={styles.title}>Hey, I'm Aymen</h1>
+          <h1 className={styles.title}>
+            Hey, I'm Aymen<span className={styles.title_dotte}>.</span>
+          </h1>
         </RevealAnimation>
         <RevealAnimation>
           <p className={styles.about_me_paragraph}>
@@ -22,6 +24,14 @@ export default function Home() {
         </RevealAnimation>
         <RevealAnimation delay="0.35">
           <SocialIcons />
+        </RevealAnimation>
+        <RevealAnimation delay="0.45">
+          <a
+            href="Aymen-Gherdaine Resume.pdf"
+            download="Aymen-Gherdaine Resume.pdf"
+          >
+            <button className={styles.resume_btn}>My resume</button>
+          </a>
         </RevealAnimation>
       </section>
       <section className={styles.profile}>

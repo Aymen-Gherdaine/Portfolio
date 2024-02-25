@@ -18,6 +18,10 @@
   color: var(--color-text-primary);
 }
 
+.title_dotte {
+  color: var(--color-text-secondary);
+}
+
 .container__list {
   list-style-type: none;
 }
@@ -65,4 +69,25 @@ html[data-color-theme="dark"] .theme_icon:hover {
 html[data-color-theme="light"] .theme_icon:hover {
   background: var(--color-text-primary);
   color: var(--theme-color-background);
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    padding: 10px 35px;
+    background: var(--theme-color-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    color: var(--color-text-primary);
+    font-size: 3rem;
+  }
+
+  .link_wrapper {
+    display: none;
+  }
 }

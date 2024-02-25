@@ -8,12 +8,26 @@
   margin: 0; /* Set the default margin to 0 */
   padding: 0; /* Set the default padding to 0 */
 }
-/*
-:root {
-  --dark-theme-color-text: #e2e2e2;
-  --dark-theme-color-background: #0a111c;
-  --dark-theme-color-text-light: #73355b;
-}*/
+
+/* WebKit (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #545454;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #303030;
+}
+
+/* Firefox */
+body {
+  scrollbar-color: #545454 #303030;
+  scrollbar-width: thin;
+}
 
 ul[role="list"],
 ol[role="list"] {
@@ -71,7 +85,9 @@ html {
   scroll-behavior: smooth; /* Makes normal scrolling smooth */
 }
 
-// style the scrollbar
+/*
+//style the scrollbar
+
 body::-webkit-scrollbar {
   width: 10px;
   height: 8px;
@@ -85,3 +101,4 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: #303030;
 }
+*/

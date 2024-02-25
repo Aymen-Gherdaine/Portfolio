@@ -44,3 +44,19 @@
 .copywrite_text {
   color: var(--color-text-secondary);
 }
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 90%;
+  }
+
+  .link_wrapper {
+    width: 90%;
+  }
+
+  .copywrite_container {
+    width: 100%;
+    margin: 20px auto;
+  }
+}

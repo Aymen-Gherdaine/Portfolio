@@ -42,7 +42,9 @@ const Header = ({ initialTheme }) => {
     <header className={styles.header}>
       <RevealAnimation>
         <Link href="/" className={styles.logo_link}>
-          <h1 className={styles.logo}>AG</h1>
+          <h1 className={styles.logo}>
+            A<span className={styles.title_dotte}>.</span>
+          </h1>
         </Link>
       </RevealAnimation>
 
