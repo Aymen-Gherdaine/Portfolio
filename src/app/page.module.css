@@ -68,7 +68,7 @@
 
 /* Small devices (phones) */
 @media only screen and (max-width: 600px) {
-  .main {
+  .home_page_hero {
     width: 90%;
     flex-direction: column-reverse;
     padding: 20px 0;
