@@ -10,7 +10,7 @@ export default function Home() {
       <section className={styles.about}>
         <RevealAnimation>
           <h1 className={styles.title}>
-            Hey, I'm Aymen<span className={styles.title_dotte}>.</span>
+            Hey, I&apos;m Aymen<span className={styles.title_dotte}>.</span>
           </h1>
         </RevealAnimation>
         <RevealAnimation>
@@ -42,7 +42,7 @@ export default function Home() {
             width={450}
             height={450}
             style={{
-              borderRadius: "58% 42% 23% 77% / 55% 52% 48% 45% ",
+              borderRadius: "58% 42% 23% 77% / 55% 52% 48% 45%",
             }}
           />
         </RevealAnimation>
