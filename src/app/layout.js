@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   // get the theme-color from user browser cookies
   const savedTheme = cookies().get("color-theme");
   // set the theme color to user prefrence or to light mode
-  const theme = savedTheme?.value || "light";
+  const theme = savedTheme?.value || "dark";
 
   return (
     <html
