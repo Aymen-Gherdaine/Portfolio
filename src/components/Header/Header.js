@@ -79,11 +79,7 @@ const Header = ({ initialTheme }) => {
       </div>
       <RevealAnimation delay="0.5">
         <button className={styles.theme_icon} onClick={handleToggleTheme}>
-          {theme === "light" ? (
-            <Sun size="1.5rem" />
-          ) : (
-            <Moon Sun size="1.5rem" />
-          )}
+          {theme === "light" ? <Sun size="1.5rem" /> : <Moon size="1.5rem" />}
         </button>
       </RevealAnimation>
     </header>
