@@ -15,10 +15,9 @@ export default function ContactForm() {
 
   const onSubmit = async (data) => {
     const result = await sendEmail(data);
-    console.log(result);
+
     // toast success
     if (result?.success) {
-      console.log({ data: result?.data });
       toast.success("Your message was sent successfuly");
       reset();
       return;
