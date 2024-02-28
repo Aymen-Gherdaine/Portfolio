@@ -13,7 +13,9 @@ export default function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm();
 
+  // function that handle the user form submit
   const onSubmit = async (data) => {
+    // sending the form to our server action fnc(sendEmail)
     const result = await sendEmail(data);
 
     // toast success

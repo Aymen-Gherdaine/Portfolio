@@ -5,6 +5,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Send form content to my email using resend
 async function sendEmail(data) {
   if (data) {
     const { name, email, message } = data;
