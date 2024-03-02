@@ -8,15 +8,17 @@ import { GitHub, LogIn } from "react-feather";
 const Project = () => {
   return (
     <div className={styles.project_wrapper}>
-      <div className={styles.project_image_wrapper}>
-        <Image
-          src={laghata_project}
-          alt="laghata project image"
-          width={500}
-          height={500}
-          className={styles.project_image}
-        />
-      </div>
+      <RevealAnimation>
+        <div className={styles.project_image_wrapper}>
+          <Image
+            src={laghata_project}
+            alt="laghata project image"
+            width={500}
+            height={500}
+            className={styles.project_image}
+          />
+        </div>
+      </RevealAnimation>
 
       <div className={styles.project_title_wrapper}>
         <h1 className={styles.project_title}>
