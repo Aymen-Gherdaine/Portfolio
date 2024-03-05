@@ -92,4 +92,8 @@
   .project_image_wrapper {
     padding: 30px 15px 0 15px;
   }
+
+  .project_tech_wrapper {
+    font-size: 1.2rem;
+  }
 }
