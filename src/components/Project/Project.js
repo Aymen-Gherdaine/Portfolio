@@ -1,17 +1,19 @@
 import RevealAnimation from "@/components/Animation/RevealAnimation";
-import laghata_project from "../../../public/laghata_project.jpg";
 import styles from "./project.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { GitHub, LogIn } from "react-feather";
 
-const Project = () => {
+const Project = ({ project_details }) => {
+  const { name, image, description, techstack, github, website } =
+    project_details;
+
   return (
     <div className={styles.project_wrapper}>
       <RevealAnimation>
         <div className={styles.project_image_wrapper}>
           <Image
-            src={laghata_project}
+            src={image}
             alt="laghata project image"
             width={500}
             height={500}
@@ -23,26 +25,19 @@ const Project = () => {
       <div className={styles.project_title_wrapper}>
         <h1 className={styles.project_title}>
           <RevealAnimation>
-            Laghata<span className={styles.project_title_dotte}>.</span>
+            {name}
+            <span className={styles.project_title_dotte}>.</span>
           </RevealAnimation>
         </h1>
 
         <div className={styles.line_wrapper}></div>
         <div className={styles.project_links}>
-          <Link
-            href="https://github.com/Aymen-Gherdaine/laghata-marketplace"
-            className={styles.social_icon}
-            target="_blank"
-          >
+          <Link href={github} className={styles.social_icon} target="_blank">
             <RevealAnimation>
               <GitHub size="1.7rem" />
             </RevealAnimation>
           </Link>
-          <Link
-            href="https://laghata.com"
-            className={styles.social_icon}
-            target="_blank"
-          >
+          <Link href={website} className={styles.social_icon} target="_blank">
             <RevealAnimation>
               <LogIn size="1.7rem" />
             </RevealAnimation>
@@ -52,17 +47,10 @@ const Project = () => {
 
       <div className={styles.project_details_wrapper}>
         <RevealAnimation delay="0.4">
-          <p className={styles.project_tech_wrapper}>
-            React - Node - Express - MongoDb - Aws Ec2
-          </p>
+          <p className={styles.project_tech_wrapper}>{techstack}</p>
         </RevealAnimation>
 
-        <RevealAnimation delay="0.5">
-          The Laghata app serves as a marketplace connecting individuals eager
-          to rent out their equipment for various activities and adventures.
-          Whether you're seeking gear for outdoor pursuits or thrilling
-          experiences.
-        </RevealAnimation>
+        <RevealAnimation delay="0.5">{description}</RevealAnimation>
       </div>
     </div>
   );
