@@ -72,6 +72,12 @@
   color: var(--color-text-primary);
 }
 
+.project_tech_wrapper {
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 15px;
+}
+
 .project_details_wrapper {
 }
 

@@ -51,7 +51,13 @@ const Project = () => {
       </div>
 
       <div className={styles.project_details_wrapper}>
-        <RevealAnimation>
+        <RevealAnimation delay="0.4">
+          <p className={styles.project_tech_wrapper}>
+            React - Node - Express - MongoDb - Aws Ec2
+          </p>
+        </RevealAnimation>
+
+        <RevealAnimation delay="0.5">
           The Laghata app serves as a marketplace connecting individuals eager
           to rent out their equipment for various activities and adventures.
           Whether you're seeking gear for outdoor pursuits or thrilling
