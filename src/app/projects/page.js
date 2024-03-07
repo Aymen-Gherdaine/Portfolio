@@ -1,7 +1,7 @@
 import styles from "./projects.module.css";
 import Project from "@/components/Project/Project";
 import PageTitle from "@/components/PageTitle/PageTitle";
-import { projects } from "@/db/projects";
+import { projects } from "../../../content/projects";
 
 const Projects = () => {
   return (

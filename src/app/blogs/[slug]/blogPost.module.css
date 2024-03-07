@@ -1,0 +1,17 @@
+.article_wrapper {
+  width: 70%;
+  margin: 20px auto;
+  padding: 60px;
+  background: var(--color-text-primary);
+  color: var(--theme-color-background);
+  border-radius: 15px;
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .article_wrapper {
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+  }
+}
