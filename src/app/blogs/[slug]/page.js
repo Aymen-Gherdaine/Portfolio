@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import styles from "./blogPost.module.css";
+import getPostMetadata from "@/utils/getPostMetadata";
 
 // function that return the blog post content
 function getPostContent(slug) {
@@ -13,6 +14,11 @@ function getPostContent(slug) {
 
   return matterResult;
 }
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata("content/posts/");
+  return posts.map((post) => ({ slug: post.slug }));
+};
 
 const blogPostPage = ({ params }) => {
   const postContent = getPostContent(params.slug);
