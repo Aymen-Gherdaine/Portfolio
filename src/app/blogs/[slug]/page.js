@@ -15,10 +15,21 @@ function getPostContent(slug) {
   return matterResult;
 }
 
+// function that generate static slug for each blog post during the building time
 export const generateStaticParams = async () => {
   const posts = getPostMetadata("content/posts/");
+
   return posts.map((post) => ({ slug: post.slug }));
 };
+
+// generate metadata for each blog post
+export async function generateMetadata({ params }) {
+  const id = params?.slug ? " . " + params?.slug : "";
+
+  return {
+    title: `Aymen Gherdaine ${id.replaceAll("-", " ")}`,
+  };
+}
 
 const blogPostPage = ({ params }) => {
   const postContent = getPostContent(params.slug);
