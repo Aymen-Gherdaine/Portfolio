@@ -15,8 +15,6 @@ const Error = () => {
           width={500}
           height={500}
         />
-
-        <p></p>
       </main>
     </RevealAnimation>
   );
