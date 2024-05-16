@@ -50,7 +50,7 @@ const Header = ({ initialTheme }) => {
 
       <div className={styles.link_wrapper}>
         <RevealAnimation delay="0.3">
-          <ul className={styles.container__list}>
+          <ul className={styles.container_list}>
             <li>
               <Link href="/blogs" className={styles.link}>
                 Blog
@@ -59,7 +59,7 @@ const Header = ({ initialTheme }) => {
           </ul>
         </RevealAnimation>
         <RevealAnimation delay="0.4">
-          <ul className={styles.container__list}>
+          <ul className={styles.container_list}>
             <li>
               <Link href="/projects" className={styles.link}>
                 Projects
@@ -68,7 +68,7 @@ const Header = ({ initialTheme }) => {
           </ul>
         </RevealAnimation>
         <RevealAnimation delay="0.5">
-          <ul className={styles.container__list}>
+          <ul className={styles.container_list}>
             <li>
               <Link href="/contact" className={styles.link}>
                 Contact

@@ -22,7 +22,7 @@
   color: var(--color-text-secondary);
 }
 
-.container__list {
+.container_list {
   list-style-type: none;
 }
 
