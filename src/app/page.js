@@ -45,6 +45,7 @@ export default function Home() {
               style={{
                 borderRadius: "58% 42% 23% 77% / 55% 52% 48% 45%",
               }}
+              priority
             />
           </RevealAnimation>
         </section>

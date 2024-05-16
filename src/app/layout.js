@@ -9,7 +9,7 @@ import { DARK_COLOR, LIGHT_COLOR } from "../constants";
 import Providers from "./providers";
 
 export const metadata = {
-  title: "Aymen Gherdaine Portfolio",
+  title: "Aymen Gherdaine",
   description: "Aymen Gherdaine Portfolio",
 };
 
