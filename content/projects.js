@@ -2,8 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "Laghata",
-    image:
-      "https://aymen-portfolio-bucket.s3.ca-central-1.amazonaws.com/laghata_project.jpg",
+    image: `${process.env.AWS_S3_BUCKET}/laghata_project.jpg`,
     description: `The Laghata app serves as a marketplace connecting individuals eager
     to rent out their equipment for various activities and adventures.
     Whether you're seeking gear for outdoor pursuits or thrilling
