@@ -9,3 +9,12 @@
   gap: 100px;
   min-height: 100vh;
 }
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+    margin: 10px auto;
+    gap: 40px;
+  }
+}

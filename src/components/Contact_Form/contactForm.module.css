@@ -53,4 +53,8 @@
   .name_email_container {
     flex-direction: column;
   }
+
+  .form {
+    width: 100%;
+  }
 }

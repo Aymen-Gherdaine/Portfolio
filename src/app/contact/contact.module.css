@@ -15,7 +15,6 @@
 /* Small devices (phones) */
 @media only screen and (max-width: 600px) {
   .wrapper {
-    width: 90%;
-    margin-top: 35px;
+    width: 100%;
   }
 }
