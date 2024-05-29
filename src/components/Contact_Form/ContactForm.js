@@ -4,6 +4,7 @@ import styles from "./contactForm.module.css";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import sendEmail from "@/app/_actions";
+import RevealAnimation from "../Animation/RevealAnimation";
 
 export default function ContactForm() {
   const {
@@ -32,50 +33,57 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-      <div className={styles.name_email_container}>
-        <div className={styles.name_wrapper}>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            className={styles.name}
-            placeholder="Name"
-            {...register("name", {
-              required: "Name is required",
+      <RevealAnimation delay="0.4">
+        <div className={styles.name_email_container}>
+          <div className={styles.name_wrapper}>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              className={styles.name}
+              placeholder="Name"
+              {...register("name", {
+                required: "Name is required",
+              })}
+            />
+            {errors.name && <p>{errors.name.message}</p>}
+          </div>
+          <div className={styles.email_wrapper}>
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              className={styles.email}
+              placeholder="Email"
+              {...register("email", {
+                required: "Email is required",
+              })}
+            />
+            {errors.email && <p>{errors.email.message}</p>}
+          </div>
+        </div>
+      </RevealAnimation>
+
+      <RevealAnimation delay="0.6">
+        <div className={styles.message_container}>
+          <label htmlFor="message">Message</label>
+          <textarea
+            placeholder="Message"
+            className={styles.message}
+            {...register("message", {
+              required: "A message is required",
             })}
           />
-          {errors.name && <p>{errors.name.message}</p>}
+          {errors.message && <p>{errors.message.message}</p>}
         </div>
-        <div className={styles.email_wrapper}>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            className={styles.email}
-            placeholder="Email"
-            {...register("email", {
-              required: "Email is required",
-            })}
-          />
-          {errors.email && <p>{errors.email.message}</p>}
-        </div>
-      </div>
-      <div className={styles.message_container}>
-        <label htmlFor="message">Message</label>
-        <textarea
-          placeholder="Message"
-          className={styles.message}
-          {...register("message", {
-            required: "A message is required",
-          })}
-        />
-        {errors.message && <p>{errors.message.message}</p>}
-      </div>
-      <button
-        disabled={isSubmitting}
-        type="submit"
-        className={styles.submit_btn}
-      >
-        {isSubmitting ? "Sending..." : <p>Let&apos;s talk</p>}
-      </button>
+      </RevealAnimation>
+      <RevealAnimation delay="0.9">
+        <button
+          disabled={isSubmitting}
+          type="submit"
+          className={styles.submit_btn}
+        >
+          {isSubmitting ? "Sending..." : <p>Let&apos;s talk</p>}
+        </button>
+      </RevealAnimation>
     </form>
   );
 }

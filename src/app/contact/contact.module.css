@@ -1,5 +1,5 @@
 .wrapper {
-  width: 55%;
+  width: 80%;
   margin: 10px auto 30px auto;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 
 .form_title {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 
 /* Small devices (phones) */

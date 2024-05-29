@@ -1,53 +1,14 @@
-import Image from "next/image";
+import HomePageHero from "@/components/HomePageHero/HomePageHero";
+import Projects from "./projects/page";
+import Contact from "./contact/page";
 import styles from "./page.module.css";
-import RevealAnimation from "../components/Animation/RevealAnimation";
-import SocialIcons from "@/components/Social_Icons/SocialIcons";
-import profile from "../../content/profile";
 
 export default function Home() {
   return (
-    <main>
-      <section className={styles.home_page_hero}>
-        <section className={styles.about}>
-          <RevealAnimation>
-            <h1 className={styles.title}>
-              {profile.about_me_title}
-              <span className={styles.title_dotte}>.</span>
-            </h1>
-          </RevealAnimation>
-          <RevealAnimation>
-            <p className={styles.about_me_paragraph}>
-              {profile.about_me_paragraph}
-            </p>
-          </RevealAnimation>
-          <RevealAnimation delay="0.35">
-            <SocialIcons />
-          </RevealAnimation>
-          <RevealAnimation delay="0.45">
-            <a
-              href={profile.resume_href}
-              download={profile.resume_file_download}
-              target="_blank"
-            >
-              <button className={styles.resume_btn}>My resume</button>
-            </a>
-          </RevealAnimation>
-        </section>
-        <section className={styles.profile}>
-          <RevealAnimation>
-            <Image
-              src={profile.image}
-              alt="Picture of the author"
-              width={450}
-              height={450}
-              style={{
-                borderRadius: "58% 42% 23% 77% / 55% 52% 48% 45%",
-              }}
-              priority
-            />
-          </RevealAnimation>
-        </section>
-      </section>
+    <main className={styles.wrapper}>
+      <HomePageHero />
+      <Projects />
+      <Contact />
     </main>
   );
 }

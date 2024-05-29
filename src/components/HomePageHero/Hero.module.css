@@ -1,0 +1,95 @@
+.wrapper {
+  background: var(--theme-color-background);
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home_page_hero {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  flex: 1;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.title_dotte {
+  color: var(--color-text-secondary);
+}
+
+.about_me_paragraph {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.resume_btn {
+  background: transparent;
+  border: 1px solid var(--color-text-secondary);
+  color: var(--color-text-primary);
+  padding: 15px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.resume_btn:hover {
+  background: var(--color-text-primary);
+  color: var(--theme-color-background);
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .home_page_hero {
+    width: 90%;
+    flex-direction: column-reverse;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .profile {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .about_me_paragraph {
+    font-size: 0.9rem;
+  }
+
+  .resume_btn {
+    padding: 13px 20px;
+  }
+}
