@@ -1,26 +1,9 @@
-.wrapper {
-  background: var(--theme-color-background);
-  color: var(--color-text-primary);
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .home_page_hero {
   width: 80%;
+  min-height: 80vh;
   margin: 0 auto;
-  padding: 50px 0;
   display: flex;
   gap: 10px;
-}
-
-.main {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
-  flex: 1;
 }
 
 .about {
@@ -42,14 +25,14 @@
 
 .about_me_paragraph {
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
 }
 
 .profile {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .resume_btn {

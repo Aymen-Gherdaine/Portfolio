@@ -62,7 +62,7 @@ export default function ContactForm() {
         </div>
       </RevealAnimation>
 
-      <RevealAnimation delay="0.6">
+      <RevealAnimation delay="0.5">
         <div className={styles.message_container}>
           <label htmlFor="message">Message</label>
           <textarea
@@ -75,7 +75,8 @@ export default function ContactForm() {
           {errors.message && <p>{errors.message.message}</p>}
         </div>
       </RevealAnimation>
-      <RevealAnimation delay="0.9">
+
+      <RevealAnimation delay="0.6">
         <button
           disabled={isSubmitting}
           type="submit"

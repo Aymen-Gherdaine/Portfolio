@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body className={styles.wrapper}>
         <Providers>
           <Header initialTheme={theme} />
-          <main className={styles.main}>{children}</main>
+          <main>{children}</main>
           <Footer />
         </Providers>
       </body>

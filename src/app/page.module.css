@@ -2,12 +2,12 @@
   background: var(--theme-color-background);
   color: var(--color-text-primary);
   width: 75%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 100px;
-  min-height: 100vh;
 }
 
 /* Small devices (phones) */

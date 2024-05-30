@@ -1,10 +1,10 @@
 .wrapper {
   width: 80%;
+  min-height: 80vh;
   margin: 10px auto 30px auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px auto;
 }
 
 .form_title {
@@ -15,6 +15,6 @@
 /* Small devices (phones) */
 @media only screen and (max-width: 600px) {
   .wrapper {
-    width: 100%;
+    width: 90%;
   }
 }
