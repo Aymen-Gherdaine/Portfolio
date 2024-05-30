@@ -76,7 +76,7 @@ export default function ContactForm() {
         </div>
       </RevealAnimation>
 
-      <RevealAnimation delay="0.6">
+      <RevealAnimation delay="0.5">
         <button
           disabled={isSubmitting}
           type="submit"

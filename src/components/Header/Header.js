@@ -41,7 +41,7 @@ const Header = ({ initialTheme }) => {
   }
   return (
     <header className={styles.header}>
-      <RevealAnimation>
+      <RevealAnimation delay="0.2">
         <Link href="/" className={styles.logo_link}>
           <h1 className={styles.logo}>
             A<span className={styles.title_dotte}>.</span>

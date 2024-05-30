@@ -8,13 +8,13 @@ export default function HomePageHero() {
   return (
     <section className={styles.home_page_hero}>
       <section className={styles.about}>
-        <RevealAnimation>
+        <RevealAnimation delay="0.5">
           <h1 className={styles.title}>
             {profile.about_me_title}
             <span className={styles.title_dotte}>.</span>
           </h1>
         </RevealAnimation>
-        <RevealAnimation>
+        <RevealAnimation delay="0.7">
           <p className={styles.about_me_paragraph}>
             {profile.about_me_paragraph}
           </p>
@@ -33,7 +33,7 @@ export default function HomePageHero() {
         </RevealAnimation>
       </section>
       <section className={styles.profile}>
-        <RevealAnimation>
+        <RevealAnimation delay="0.5">
           <Image
             src={profile.image}
             alt="Picture of the author"
