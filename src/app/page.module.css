@@ -1,13 +1,12 @@
 .wrapper {
-  background: var(--theme-color-background);
-  color: var(--color-text-primary);
   width: 75%;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
+}
+
+.main {
   display: flex;
   flex-direction: column;
-  gap: 100px;
 }
 
 /* Small devices (phones) */

@@ -2,6 +2,7 @@
   width: 80%;
   min-height: 100vh;
   margin: 30px auto;
+  scroll-margin-top: 200px;
 }
 
 .projects_container {

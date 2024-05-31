@@ -42,7 +42,7 @@ const Header = ({ initialTheme }) => {
   return (
     <header className={styles.header}>
       <RevealAnimation delay="0.2">
-        <Link href="/" className={styles.logo_link}>
+        <Link href="#hero_section" className={styles.logo_link}>
           <h1 className={styles.logo}>
             A<span className={styles.title_dotte}>.</span>
           </h1>
@@ -53,7 +53,7 @@ const Header = ({ initialTheme }) => {
         <RevealAnimation delay="0.3">
           <ul className={styles.container_list}>
             <li>
-              <Link href="/blogs" className={styles.link}>
+              <Link href="#skills" className={styles.link}>
                 Blog
               </Link>
             </li>
@@ -62,7 +62,7 @@ const Header = ({ initialTheme }) => {
         <RevealAnimation delay="0.4">
           <ul className={styles.container_list}>
             <li>
-              <Link href="/projects" className={styles.link}>
+              <Link href="#projects_section" className={styles.link}>
                 Projects
               </Link>
             </li>
@@ -71,7 +71,7 @@ const Header = ({ initialTheme }) => {
         <RevealAnimation delay="0.5">
           <ul className={styles.container_list}>
             <li>
-              <Link href="/contact" className={styles.link}>
+              <Link href="#contact_section" className={styles.link}>
                 Contact
               </Link>
             </li>

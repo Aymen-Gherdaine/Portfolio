@@ -9,18 +9,32 @@
   padding: 0; /* Set the default padding to 0 */
 }
 
-/* WebKit (Chrome, Safari) */
+/* Apply scrollbar styling to the entire document */
+html {
+  background: var(--theme-color-background);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #545454 #303030; /* For Firefox */
+}
+
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #545454;
-  border-radius: 5px;
+  background: #545454; /* Color of the scrollbar thumb */
+  border-radius: 50px; /* Roundness of the scrollbar thumb */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #303030;
+  background: #303030; /* Color of the scrollbar track */
+}
+
+/* Optional: Add hover effects for better UX */
+body::-webkit-scrollbar-thumb:hover {
+  background: #707070; /* Change thumb color on hover */
 }
 
 /* Firefox */
@@ -32,10 +46,6 @@ body {
 ul[role="list"],
 ol[role="list"] {
   list-style: none; /* Turn off numbered and unordered list decoration */
-}
-
-html:focus-within {
-  scroll-behavior: smooth; /* Make the scrolling inside of any scrollable element smooth */
 }
 
 a:not([class]) {
@@ -83,23 +93,4 @@ body,
 html {
   height: 100%; /* Makes the body element full screen */
   scroll-behavior: smooth; /* Makes normal scrolling smooth */
-  //overflow: hidden; /* Prevent default scrolling */
 }
-
-/*
-//style the scrollbar
-
-body::-webkit-scrollbar {
-  width: 10px;
-  height: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #545454;
-  border-radius: 50px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #303030;
-}
-*/

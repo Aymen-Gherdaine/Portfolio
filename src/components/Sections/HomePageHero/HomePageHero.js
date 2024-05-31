@@ -1,12 +1,12 @@
 import Image from "next/image";
-import profile from "../../../content/profile";
+import profile from "../../../../content/profile";
 import styles from "./Hero.module.css";
-import RevealAnimation from "../Animation/RevealAnimation";
-import SocialIcons from "../Social_Icons/SocialIcons";
+import RevealAnimation from "../../Animation/RevealAnimation";
+import SocialIcons from "../../Social_Icons/SocialIcons";
 
 export default function HomePageHero() {
   return (
-    <section className={styles.home_page_hero}>
+    <section className={styles.home_page_hero} id="hero_section">
       <section className={styles.about}>
         <RevealAnimation delay="0.5">
           <h1 className={styles.title}>

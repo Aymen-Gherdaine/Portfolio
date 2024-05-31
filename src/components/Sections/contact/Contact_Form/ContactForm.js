@@ -4,7 +4,7 @@ import styles from "./contactForm.module.css";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import sendEmail from "@/app/_actions";
-import RevealAnimation from "../Animation/RevealAnimation";
+import RevealAnimation from "../../../Animation/RevealAnimation";
 
 export default function ContactForm() {
   const {

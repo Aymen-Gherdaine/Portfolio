@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
       data-color-theme={theme}
       style={theme === "light" ? LIGHT_COLOR : DARK_COLOR}
     >
-      <body className={styles.wrapper}>
+      <body>
         <Providers>
           <Header initialTheme={theme} />
-          <main>{children}</main>
+          <main className={styles.main}>{children}</main>
           <Footer />
         </Providers>
       </body>
