@@ -10,7 +10,7 @@ const Footer = () => {
         <ul className={styles.container__list}>
           <RevealAnimation delay="0.5">
             <li>
-              <Link href="/blogs" className={styles.link}>
+              <Link href="#skills" className={styles.link}>
                 Blog
               </Link>
             </li>
@@ -19,7 +19,7 @@ const Footer = () => {
         <ul className={styles.container__list}>
           <RevealAnimation delay="0.6">
             <li>
-              <Link href="/projects" className={styles.link}>
+              <Link href="#projects_section" className={styles.link}>
                 Projects
               </Link>
             </li>
@@ -28,7 +28,7 @@ const Footer = () => {
         <ul className={styles.container__list}>
           <RevealAnimation delay="0.7">
             <li>
-              <Link href="/contact" className={styles.link}>
+              <Link href="#contact_section" className={styles.link}>
                 Contact
               </Link>
             </li>
