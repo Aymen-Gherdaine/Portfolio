@@ -54,7 +54,7 @@ const Header = ({ initialTheme }) => {
           <ul className={styles.container_list}>
             <li>
               <Link href="#skills" className={styles.link}>
-                Blog
+                Skills
               </Link>
             </li>
           </ul>

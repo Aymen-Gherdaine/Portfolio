@@ -1,0 +1,41 @@
+.wrapper {
+  width: 80%;
+  min-height: 100vh;
+  margin: 30px auto;
+  scroll-margin-top: 200px;
+}
+
+.skills_container {
+  max-width: 70%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill_wrapper {
+  margin-bottom: 30px;
+}
+
+.list_style {
+  list-style-type: none;
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .skills_container {
+    max-width: 100%;
+  }
+
+  .tech_icon {
+    width: 80px;
+    height: 80px;
+  }
+}

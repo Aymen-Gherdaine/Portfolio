@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.link_wrapper}>
         <ul className={styles.container__list}>
-          <RevealAnimation delay="0.5">
+          <RevealAnimation delay="0.3">
             <li>
               <Link href="#skills" className={styles.link}>
                 Blog
@@ -17,7 +17,7 @@ const Footer = () => {
           </RevealAnimation>
         </ul>
         <ul className={styles.container__list}>
-          <RevealAnimation delay="0.6">
+          <RevealAnimation delay="0.4">
             <li>
               <Link href="#projects_section" className={styles.link}>
                 Projects
@@ -26,7 +26,7 @@ const Footer = () => {
           </RevealAnimation>
         </ul>
         <ul className={styles.container__list}>
-          <RevealAnimation delay="0.7">
+          <RevealAnimation delay="0.5">
             <li>
               <Link href="#contact_section" className={styles.link}>
                 Contact
@@ -36,12 +36,12 @@ const Footer = () => {
         </ul>
       </div>
 
-      <RevealAnimation delay="0.8">
+      <RevealAnimation delay="0.6">
         <SocialIcons />
       </RevealAnimation>
 
       <div className={styles.copywrite_container}>
-        <RevealAnimation delay="0.9">
+        <RevealAnimation delay="0.7">
           <p className={styles.copywrite_text}>
             © 2024 Aymen Gherdaine. All rights reserved.
           </p>
