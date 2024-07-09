@@ -14,7 +14,7 @@ export const projects = [
   {
     id: 2,
     name: "Eleganza",
-    image: `${process.env.AWS_S3_BUCKET}/Eleganza.png`,
+    image: `${process.env.AWS_S3_BUCKET}/Eleganza.jpg`,
     description: `The Eleganza E-Commerece app is a clothing brand. The primary objective is to provide an online platform where customers can browse, select, and purchase clothing items easily and efficiently.`,
     techstack: "NextJs - Wix Headless - Tailwind Css - Stripe - Framer-motion",
     github: "https://github.com/Aymen-Gherdaine/E-Commerce.git",

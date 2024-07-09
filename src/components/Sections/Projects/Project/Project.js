@@ -14,7 +14,7 @@ const Project = ({ project_details }) => {
         <div className={styles.project_image_wrapper}>
           <Image
             src={image}
-            alt="laghata project image"
+            alt={name + " image"}
             width={500}
             height={500}
             className={styles.project_image}
