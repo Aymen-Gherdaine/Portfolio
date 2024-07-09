@@ -23,6 +23,8 @@
 
 .project_image {
   border-radius: 10px;
+  height: 400px;
+  width: 400px;
 }
 
 .project_title_wrapper {
