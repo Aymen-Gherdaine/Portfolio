@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     domains: ["aymen-portfolio-bucket.s3.ca-central-1.amazonaws.com"],
   },
