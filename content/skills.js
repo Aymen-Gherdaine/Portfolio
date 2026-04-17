@@ -48,6 +48,18 @@ const skills = [
     documentation: "https://www.mongodb.com/docs/",
     animation_delay: "1",
   },
+   {
+    tech: "WordPress",
+    icon: `${process.env.AWS_S3_BUCKET}/wordpress.png`,
+    documentation: "https://wordpress.org/support/",
+    animation_delay: "1",
+  },
+   {
+    tech: "Azure",
+    icon: `${process.env.AWS_S3_BUCKET}/azure.png`,
+    documentation: "https://learn.microsoft.com/en-us/azure/",
+    animation_delay: "1",
+  },
   {
     tech: "Git",
     icon: `${process.env.AWS_S3_BUCKET}/git.webp`,

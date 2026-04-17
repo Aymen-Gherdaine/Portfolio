@@ -1,23 +1,20 @@
 export const projects = [
   {
     id: 1,
-    name: "Laghata",
-    image: `${process.env.AWS_S3_BUCKET}/laghata_project.jpg`,
-    description: `The Laghata app serves as a marketplace connecting individuals eager
-    to rent out their equipment for various activities and adventures.
-    Whether you're seeking gear for outdoor pursuits or thrilling
-    experiences.`,
-    techstack: "React - Node - Express - MongoDb - Aws - Framer-motion",
-    github: "https://github.com/Aymen-Gherdaine/laghata-marketplace",
-    website: "https://laghata.com",
+    name: "L'Hirondelle",
+    image: `${process.env.AWS_S3_BUCKET}/lhirondelle_project.png`,
+    description: `Refonte complète du site web de L'Hirondelle, un OBNL montréalais d'accueil et d'intégration des immigrants. Prise en charge du projet de A à Z : installation WordPress, personnalisation du thème, gestion de l'hébergement et du domaine, corrections techniques, et formation des membres de l'organisation à la gestion autonome du contenu.`,
+    techstack: "WordPress - PHP - JavaScript - CSS - Figma - WPML - ACF - Mailchimp - Hébergement - Gestion de domaine",
+    github: null,
+    website: "https://hirondelle.qc.ca/",
   },
   {
     id: 2,
-    name: "Eleganza",
-    image: `${process.env.AWS_S3_BUCKET}/Eleganza.jpg`,
-    description: `The Eleganza E-Commerece app is a clothing brand. The primary objective is to provide an online platform where customers can browse, select, and purchase clothing items easily and efficiently.`,
-    techstack: "NextJs - Wix Headless - Tailwind Css - Stripe - Framer-motion",
-    github: "https://github.com/Aymen-Gherdaine/E-Commerce.git",
-    website: "https://eleganza-shop.vercel.app",
+    name: "BTH Expert",
+    image: `${process.env.AWS_S3_BUCKET}/bthexpert_project.png`,
+    description: `Conception et développement du site vitrine de BTH Expert, bureau d'études spécialisé en environnement et ingénierie industrielle en Algérie. Stack moderne avec déploiement continu via Netlify et CMS intégré (Decap CMS) pour permettre au client de mettre à jour son contenu en toute autonomie, sans intervention technique.`,
+    techstack: "HTML - CSS - JavaScript - Netlify - Decap CMS",
+    github: null,
+    website: "https://bthexpert.com/",
   },
 ];
