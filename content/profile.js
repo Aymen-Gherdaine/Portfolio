@@ -1,5 +1,5 @@
 const profile = {
-  about_me_title: `Hey, I'm Aymen.`,
+  about_me_title: `Hey, I'm Aymen`,
   image: `${process.env.AWS_S3_BUCKET}/profile.png`,
   about_me_paragraph: `I got into development through e-commerce — building Shopify stores got me hooked on the craft of creating things on the web. 
   That curiosity pushed me toward a full-stack bootcamp at Concordia, backed by a Master's in Network & Systems Administration. 
