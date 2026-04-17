@@ -13,7 +13,7 @@ async function sendEmail(data) {
     try {
       const result = await resend.emails.send({
         from: "Aymen Gherdaine Coontact Form <onboarding@resend.dev>",
-        to: ["gherdaineaymen1995@gmail.com"],
+        to: ["aymengherdaine.dev"],
         subject: "Message from portfolio contact page",
         reply_to: email,
         react: EmailTemplate({ name, email, message }),

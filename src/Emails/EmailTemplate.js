@@ -16,10 +16,10 @@ export const EmailTemplate = ({ name, email, message }) => (
     <Head>
       <title>Message from {name}</title>
     </Head>
-    <Preview>New message from aymengherdaine.com</Preview>
+    <Preview>New message from aymengherdaine.dev</Preview>
     <Body>
       <Container style={container}>
-        <Link href="https://aymengherdaine.com" target="_blank">
+        <Link href="https://aymengherdaine.dev" target="_blank">
           <Heading as="h1" style={logo}>
             A<span style={title_dotte}>.</span>
           </Heading>
