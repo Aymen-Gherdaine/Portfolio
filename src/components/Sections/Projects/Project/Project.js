@@ -32,16 +32,20 @@ const Project = ({ project_details }) => {
 
         <div className={styles.line_wrapper}></div>
         <div className={styles.project_links}>
-          <Link href={github} className={styles.social_icon} target="_blank">
-            <RevealAnimation>
-              <GitHub size="1.7rem" />
-            </RevealAnimation>
-          </Link>
-          <Link href={website} className={styles.social_icon} target="_blank">
-            <RevealAnimation>
-              <LogIn size="1.7rem" />
-            </RevealAnimation>
-          </Link>
+          {github && (
+            <Link href={github} className={styles.social_icon} target="_blank">
+              <RevealAnimation>
+                <GitHub size="1.7rem" />
+              </RevealAnimation>
+            </Link>
+          )}
+          {website && (
+            <Link href={website} className={styles.social_icon} target="_blank">
+              <RevealAnimation>
+                <LogIn size="1.7rem" />
+              </RevealAnimation>
+            </Link>
+          )}
         </div>
       </div>
 
