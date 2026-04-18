@@ -5,8 +5,8 @@ const profile = {
   That curiosity pushed me toward a full-stack bootcamp at Concordia, backed by a Master's in Network & Systems Administration. 
   I build complete web solutions: from architecture and backend logic to UI and deployment. 
   I care about shipping things that actually work — for users and for the people who have to maintain them.`,
-  resume_href: `${process.env.AWS_S3_BUCKET}/Aymen-Gherdaine-CV-FR.pdf`,
-  resume_file_download: `${process.env.AWS_S3_BUCKET}/Aymen-Gherdaine-CV-FR.pdf`,
+  resume_href: `${process.env.AWS_S3_BUCKET}/AYMEN GHERDAINE - CV.pdf`,
+  resume_file_download: `${process.env.AWS_S3_BUCKET}/AYMEN GHERDAINE - CV.pdf`,
 };
  
 export default profile;
