@@ -1,19 +1,15 @@
-import styles from "./projects.module.css";
-import Project from "@/components/Sections/Projects/Project/Project";
-import PageTitle from "@/components/PageTitle/PageTitle";
 import { projects } from "../../../../content/projects";
+import ProjectsClient from "./ProjectsClient";
 
-const Projects = () => {
-  return (
-    <section className={styles.wrapper} id="projects_section">
-      <PageTitle title="Projects" />
-      <div className={styles.projects_container}>
-        {projects.map((project) => {
-          return <Project project_details={project} key={project.id} />;
-        })}
-      </div>
-    </section>
-  );
-};
+export default function Projects() {
+  const data = projects.map(({ id, name, description, techstack, github, website }) => ({
+    id,
+    name,
+    description,
+    techstack,
+    github,
+    website,
+  }));
 
-export default Projects;
+  return <ProjectsClient projects={data} />;
+}

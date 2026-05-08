@@ -1,22 +1,101 @@
-.wrapper {
-  width: 80%;
-  min-height: 80vh;
-  margin: 10px auto 30px auto;
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 8rem 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.contactHeading {
+  font-family: var(--font-display, 'Unbounded', sans-serif);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+
+.accent { color: var(--accent); }
+
+.contactEmail {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.5rem;
+  position: relative;
+  width: fit-content;
+  padding-bottom: 4px;
+}
+
+.contactEmail::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contactEmail:hover::after { width: 100%; }
+
+.contactSocials {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  scroll-margin-top: 200px;
+  gap: 0.75rem;
 }
 
-.form_title {
-  text-align: center;
-  margin: 40px 0;
+.socialItem {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  text-decoration: none;
 }
 
-/* Small devices (phones) */
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    width: 90%;
-    margin-bottom: 150px;
-  }
+.socialLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.socialItem:hover .socialLabel { color: var(--text); }
+
+.socialLine {
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: var(--muted);
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.socialItem:hover .socialLine { width: 24px; }
+
+.mobileNote {
+  display: none;
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .section { padding: 5rem 1.5rem; }
+  .contactGrid { grid-template-columns: 1fr; gap: 3rem; }
+  .contactSocials { display: none; }
+  .mobileNote { display: block; }
 }

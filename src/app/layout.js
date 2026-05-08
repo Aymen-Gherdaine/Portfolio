@@ -1,35 +1,33 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-import { cookies } from "next/headers";
+import { Unbounded, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import styles from "./page.module.css";
-import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { DARK_COLOR, LIGHT_COLOR } from "../constants";
 import Providers from "./providers";
+
+const unbounded = Unbounded({
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Aymen Gherdaine",
-  description: "Aymen Gherdaine Portfolio",
+  description: "Full-Stack Developer — Next.js, React, Node.js",
 };
 
 export default function RootLayout({ children }) {
-  // get the theme-color from user browser cookies
-  const savedTheme = cookies().get("color-theme");
-  // set the theme color to user prefrence or to light mode
-  const theme = savedTheme?.value || "dark";
-
   return (
-    <html
-      lang="en"
-      className={inter.className}
-      data-color-theme={theme}
-      style={theme === "light" ? LIGHT_COLOR : DARK_COLOR}
-    >
+    <html lang="en" className={`${unbounded.variable} ${plusJakarta.variable}`}>
       <body>
         <Providers>
-          <Header initialTheme={theme} />
-          <main className={styles.main}>{children}</main>
+          <main>{children}</main>
           <Footer />
         </Providers>
       </body>
