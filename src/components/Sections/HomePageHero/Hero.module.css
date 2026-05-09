@@ -118,6 +118,8 @@
 
 .nameAccent { color: var(--accent); }
 
+.nameWordLast { font-size: 0.82em; }
+
 /* ── Hero bottom ── */
 .heroBottom {
   display: grid;

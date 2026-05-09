@@ -55,7 +55,7 @@ export default function HomePageHero() {
           </span>
           <span className={styles.nameLine}>
             <motion.span
-              className={styles.nameWord}
+              className={`${styles.nameWord} ${styles.nameWordLast}`}
               initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.9, ease, delay: 0.63 }}
