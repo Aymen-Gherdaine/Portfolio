@@ -99,7 +99,7 @@
 
 .heroName {
   font-family: var(--font-display, 'Unbounded', sans-serif);
-  font-size: clamp(3.2rem, 10vw, 9.5rem);
+  font-size: clamp(2.8rem, 13vw, 9.5rem);
   font-weight: 700;
   line-height: 0.92;
   letter-spacing: -0.04em;
@@ -244,7 +244,7 @@
   .nav { padding: 1.5rem; }
   .navLinks { display: none; }
   .heroMain { padding: 0 1.5rem; }
-  .heroName { font-size: clamp(1.6rem, 9vw, 9.5rem); }
+  .heroName { font-size: clamp(2.8rem, 13vw, 9.5rem); }
   .heroBottom { grid-template-columns: 1fr; }
   .heroCta { align-items: flex-start; }
   .heroBar { padding: 1.25rem 1.5rem; }
